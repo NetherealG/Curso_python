@@ -21,12 +21,16 @@ class MobilePhone:
     
     def install_app(self,app):
         self.apps.append(app)
+        print("App ")
+       
     def unistall_app(self, app):
         if app in self.apps:
             self.apps.remove(app)
+            print("The app was unistall sucesfully")
             
-mobile = MobilePhone ('philidor','6 pulgadas', '9')
-print("Especificaciones tecnicas", mobile.manufacturer , mobile.screen_size, mobile.num_cores)    
-        
+mobile = MobilePhone ('philidor','6.5 pulgadas','9 núcleos' )
+print("Especificaciones tecnicas:", mobile.manufacturer , mobile.screen_size, mobile.num_cores )    
+
+mobile.install_app("Installing was succesfully")
         
   
