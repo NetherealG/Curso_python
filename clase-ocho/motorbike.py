@@ -15,7 +15,7 @@ class Motorbike:
         self.combMax = _combustible_maximo
         
    # if self.variable == False == if not self.variable
-   #if self.varible == True: == if self.variable      
+   # if self.varible == True: == if self.variable      
     def arrancar(self):
         if not self.PowOn:
             print("La motocicleta está en marcha.")
@@ -55,7 +55,7 @@ class Motorbike:
     
 
 
-Motorbike1 = Motorbike("negro","EFC-950",10, 2,"BMW","BMW300Ex", "25/04/2023",290, 199, 18)
+Motorbike1 = Motorbike("negro","EFC-950",10, 2,"BMW", "BMW300Ex", "25/04/2023",290, 199, 18)
 Motorbike2 = Motorbike(
     _marca = "Renegade",
     _modelo = "Renegade-Commando",
@@ -73,9 +73,11 @@ Motorbike1.arrancar()
 Motorbike1.detener()
 
 Motorbike1.price = 3000000
-print(f"el precio de la motocicleta{Motorbike1.marca} {Motorbike1.model} es de $ {Motorbike1.price}.")
+Motorbike2.price = 4000000
+print(f"el precio de la motocicleta {Motorbike1.marca} {Motorbike1.model} es de $ {Motorbike1.price}.")
 
 Motorbike1.consulta_price()
+Motorbike2.consulta_price()
 
 Motorbike1.comprobar_deposito()
 Motorbike2.comprobar_deposito()
