@@ -42,16 +42,16 @@ class Motorbike:
         
     def repostar(self):
         while True:
-            self.repostar_litros = float(input("Por favor, introduzca la cantidad de litros que desea repostar:\n"))
+            self.rpt_lts = float(input("Por favor, introduzca la cantidad de litros que desea repostar:\n"))
             
-            if self.comb_lts + self.repostar_litros <= self.combMax:
+            if self.comb_lts + self.rpt_lts <= self.combMax:
                 print("Repostaje exitoso.")
-                print(f"Se han repostado {self.repostar_litros} litros.")
-                self.comb_lts += self.repostar_litros 
+                print(f"Se ha repostado {self.rpt_lts} litros.")
+                self.comb_lts += self.rpt_lts 
                 print(f"El depósito tiene {self.comb_lts} litros de combustible.")
                 break
             else:
-                print("No cabe tanto combustible. ¿Quieres encharcar el concesionario?")
+                print("No cabe tanto combustible.")
     
 
 
@@ -80,11 +80,11 @@ Motorbike1.consulta_price()
 Motorbike2.consulta_price()
 
 Motorbike1.comprobar_deposito()
-Motorbike2.comprobar_deposito()
-
 Motorbike1.repostar()
-Motorbike2.repostar()
 Motorbike1.comprobar_deposito()
+
+Motorbike2.comprobar_deposito()
+Motorbike2.repostar()
 Motorbike2.comprobar_deposito()
 
 
