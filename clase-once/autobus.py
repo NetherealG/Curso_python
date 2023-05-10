@@ -73,3 +73,19 @@ class Micro:
                 else:
                     total_persona += self.precio
         print("Total recaudado por la persona:", total_persona)
+
+micro = Micro("AB1234", 730)
+
+usuario1 = Usuario("Juan", 35, "hombre")
+micro.agregar_usuario(usuario1)
+
+usuario2 = Usuario("María", 25, "mujer")
+micro.agregar_usuario(usuario2)
+
+usuario3 = Usuario("Pedro", 8, "niño")
+micro.agregar_usuario(usuario3)
+
+usuario4 = Usuario("Carmen", 70, "adulto mayor")
+micro.agregar_usuario(usuario4)
+
+micro.reporte_total()
