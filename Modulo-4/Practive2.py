@@ -33,3 +33,4 @@ elif User_Weight > 80:
     print("Recomiendo esta dieta alta en fibras:")
     for key, value in list_fib.items():
         print(f"{key}: {value}")
+else : print("Coma lo que quiera ta muy flaquito uwu")
